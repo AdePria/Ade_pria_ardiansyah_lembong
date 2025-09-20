@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Ade Pria</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Profil -->
+    <section class="profile">
+      <img src="./image/ade. (2).jpeg" alt="Foto Profil" class="avatar" />
+      <h1>Ade Pria Ardiansyah Lembong</h1>
+      <p class="nim">NIM: 2205903040019</p>
+      <p class="desc">
+        Saya Mahasiswa teknologi informasi yang kuliah di Universitas Teuku Umar
+        sejak 2022. Selama menjadi mahasiswa, saya banyak mendapatkan
+        pengalaman, baik di bidang akademik maupun nonakademik. Dengan dukungan
+        dosen yang kompeten dan fasilitas yang memadai, kampus ini memberi saya
+        lingkungan belajar yang nyaman dan mendukung.
+      </p>
+    </section>
+
+    <!-- Pendidikan -->
+    <section class="card">
+      <h2 class="section-title">Riwayat Pendidikan</h2>
+      <div class="education">
+        <div class="edu-item">
+          <i class="fas fa-university"></i>
+          <strong>Universitas Teuku Umar</strong>
+          <span>2022 – sekarang</span>
+        </div>
+        <div class="edu-item">
+          <i class="fas fa-school"></i>
+          <strong>SMA N 1 Singkohor</strong>
+          <span>2019 – 2022</span>
+        </div>
+        <div class="edu-item">
+          <i class="fas fa-school"></i>
+          <strong>SMP N 1 Singkohor</strong>
+          <span>2016 – 2019</span>
+        </div>
+        <div class="edu-item">
+          <i class="fas fa-school"></i>
+          <strong>SD N 2 Singkohor</strong>
+          <span>2010 – 2016</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="card">
+      <h2 class="section-title">Keterampilan</h2>
+      <div class="skills">
+        <div class="skill">
+          <i class="devicon-html5-plain colored"></i>
+          <span>HTML</span>
+          <p></p>
+        </div>
+        <div class="skill">
+          <i class="devicon-css3-plain colored"></i>
+          <span>CSS</span>
+          <p></p>
+        </div>
+        <div class="skill">
+          <i class="devicon-javascript-plain colored"></i>
+          <span>JavaScript</span>
+          <p></p>
+        </div>
+        <div class="skill">
+          <i class="devicon-netbeans-plain"></i>
+          <span>NetBeans</span>
+          <p></p>
+        </div>
+        <div class="skill">
+          <i class="devicon-php-plain colored"></i>
+          <span>PHP</span>
+          <p></p>
+        </div>
+        <div class="skill">
+          <i class="fas fa-paint-brush"></i>
+          <span>Macromedia</span>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="card">
+      <h2 class="section-title">Kontak</h2>
+      <div class="contact-container">
+        <a href="mailto:ade.pria.ardiansyah19@gmail.com">
+          <img src="./image/gmail.png" alt="Email" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ade-pria-ardiansyah-lembong-4a7447385/"
+          target="_blank"
+        >
+          <img src="./image/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/AdePria" target="_blank">
+          <img src="./image/github.png" alt="GitHub" />
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <small>© <span id="year"></span> Ade Pria Ardiansyah Lembong</small>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

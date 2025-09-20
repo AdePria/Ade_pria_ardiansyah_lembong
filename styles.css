@@ -1,0 +1,237 @@
+:root {
+  --bg: linear-gradient(135deg, #1c1e26, #232635);
+  --card: #2a2d3a;
+  --primary: #f9a825;
+  --text: #f5f5f5;
+  --muted: #a0a3af;
+  --radius: 12px;
+  --shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  text-align: center;
+  padding: 2rem 1rem;
+  line-height: 1.7;
+  background-attachment: fixed;
+}
+
+/* Profile */
+.profile {
+  margin-bottom: 3rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary);
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(249, 168, 37, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05) rotate(3deg);
+  box-shadow: 0 0 25px rgba(249, 168, 37, 0.7);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.nim {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.desc {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Card */
+.card {
+  background: var(--card);
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 780px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--primary);
+  margin: 0.6rem auto 0;
+  border-radius: 3px;
+  animation: grow 1s ease-in-out;
+}
+
+/* Education */
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.edu-item {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 1rem 1.3rem;
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: 170px;
+  box-shadow: inset 0 0 0 2px transparent;
+}
+
+.edu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+  box-shadow: inset 0 0 0 2px var(--primary);
+}
+
+.edu-item strong {
+  color: var(--primary);
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.edu-item span {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Skills */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1.3rem;
+}
+
+.skill {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.skill:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(249, 168, 37, 0.4);
+}
+
+.skill span {
+  font-weight: 700;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.skill p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Contact */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.2rem;
+}
+
+.contact-container img {
+  width: 42px;
+  height: 42px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contact-container img:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 10px rgba(249, 168, 37, 0.7));
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+/* icon*/
+
+.edu-item i {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.skill i {
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+  display: block;
+}
